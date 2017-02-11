@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Search Results";
+}
+
+
+<div class="col-md-12" align="center">
+    <img src="~/Images/clevalogo.jpg" alt="Mountain View" style="width:1000px;height:300px;">
+</div>
+
+<div class="col-md-12" align="center">
+
+</div>
+
+
+<div class="row" align="center">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+
+
+
+        <div align="center"> <h4>Edit the ClevaDeal below:</h4></div>
+
+
+
+
+        <form id="ContactUsCaptchaWebForm">
+
+            <table border="0" cellpadding="5" cellspacing="0" width="600">
+                <td><b>Description:</b>Full Irish Breakfast</td>
+                <td><input id="Organization" name="Organization" type="text" maxlength="60" style="width:300px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Deal Information:</b>Enjoy a delicious start to the day by plating up with two rashers and two sausages, culinaryminded customers can chew their Full Irish Breakfast with a delicious voyage through fried eggs, black and white pudding, grilled tomatoes, fried mushrooms and toast
+
+Available between 9am and 12pm
+
+One per person - please phone ahead for large groups
+
+This deal expires at 12pm on 24-12-16
+</td>
+                    <td>
+                        <textarea name="message" rows="10" cols="60"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Expiry:</b>24-12-16</td>
+                    <td><input type="date" name="bday"></td>
+                </tr>
+                <tr>
+                    <td><b>Location:</b></td>
+                    <td><input id="HomePhone" name="HomePhone" type="text" maxlength="43" style="width:250px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Cost:</b>€4.99</td>
+                    <td><input id="CellPhone" name="CellPhone" type="text" maxlength="43" style="width:250px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Add a Photo:</b></td>
+                    <td>
+                        <a href='@Url.Action("Index", "Home")'>
+                            <input type='button' value='Choose Photo' />
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+            <br />
+        </form>
+
+        <a href='@Url.Action("Index", "Home")'>
+            <input type='button' value='Update this ClevaDeal' />
+        </a>
+
+
+
+
+    </div>
+    <div class="col-md-2">
+
+
+    </div>
+
+</div>

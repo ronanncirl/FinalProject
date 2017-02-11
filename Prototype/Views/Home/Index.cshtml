@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="col-md-12" align="center">
+    <img src="~/Images/clevalogo.jpg" alt="Mountain View" style="width:1000px;height:300px;">
+</div>
+
+<div align="center"> <h4>Search using the options below:</h4></div>
+
+<div class="row" align="center">
+    <div class="col-md-4">
+      
+    </div>
+    <div class="col-md-4" >
+        <select name="year">
+            <option>--- I'm looking for --- </option>
+            <option>Travel</option>
+            <option>Health andBeauty</option>
+            <option>Computers and Electronics</option>
+            <option>Food</option>
+            <option>Hotels</option>            
+        </select>
+
+        <br />
+        <br />
+
+        <select name="year">
+            <option>--- I want ---</option>
+            <option>Take Away</option>
+            <option>Restaurant</option>
+            <option>Lunch Menu</option>
+            <option>Early Bird</option>
+            <option>Breakfast</option>
+        </select>
+
+        <br />
+        <br />
+
+        <select name="year">
+            <option>--- Located In ---</option>
+            <option>Dublin</option>
+            <option>Meath</option>
+            <option>Louth</option>
+            <option>Kildare</option>
+            <option>Wexford</option>
+        </select>
+
+        <br />
+        <br />
+
+        <select name="year">
+            <option>--- Near To ---</option>
+            <option>Dublin 1</option>
+            <option>Dublin 2</option>
+            <option>Dublin 3</option>
+            <option>Dublin 4</option>
+            <option>Dublin 5</option>
+        </select>
+
+        <br />
+        <br />
+        <br />
+
+        
+
+        <a href='@Url.Action("Index", "ListResults")'>
+            <input type='button' value='Find ClevaDeals' />
+        </a>
+
+    </div>
+    <div class="col-md-4">
+        
+       
+    </div>
+</div>

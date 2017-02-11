@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Search Results";
+}
+
+
+
+<div class="col-md-12" align="center">
+    <img src="~/Images/clevalogo.jpg" alt="Mountain View" style="width:1000px;height:300px;">
+</div>
+
+<div align="center"> <h4>Enter your details below to Login:</h4></div>
+
+<div class="col-md-12" align="center">
+
+</div>
+
+
+<div class="row" align="center">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+
+
+        @{
+            ViewBag.Title = "Index";
+        }
+
+
+
+
+
+
+        <form id="ContactUsCaptchaWebForm">
+
+            <table border="0" cellpadding="5" cellspacing="0" width="600">
+               
+                 <tr>
+                    <td><b>Username:</b></td>
+                    <td><input id="Organization" name="Organization" type="text" maxlength="60" style="width:300px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Password*:</b></td>
+                    <td><input id="FromEmailAddress" name="FromEmailAddress" type="text" maxlength="60" style="width:300px; border:1px solid #999999" /></td>
+                </tr>
+               </table>
+            <br />
+        </form>
+
+        <a href='@Url.Action("Index", "ManageDeals")'>
+            <input type='button' value='Login' />
+        </a>
+
+
+
+
+    </div>
+    <div class="col-md-2">
+
+
+    </div>
+
+</div>

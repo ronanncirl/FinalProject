@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Search Results";
+}
+
+
+<div class="col-md-12" align="center">
+    <img src="~/Images/clevalogo.jpg" alt="Mountain View" style="width:1000px;height:300px;">
+</div>
+
+<div class="col-md-12" align="center">
+
+</div>
+
+
+<div class="row" align="center">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+
+
+      
+        <div align="center"> <h4>Submit a new ClevaDeal using the form below:</h4></div>
+
+
+
+
+        <form id="ContactUsCaptchaWebForm">
+
+            <table border="0" cellpadding="5" cellspacing="0" width="600">
+               <td><b>Description:</b></td>
+                    <td><input id="Organization" name="Organization" type="text" maxlength="60" style="width:300px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Deal Information:</b></td>
+                    <td><textarea name="message" rows="10" cols="60">
+    
+</textarea></td>
+                </tr>
+                <tr>
+                    <td><b>Expiry:</b></td>
+                    <td><input type="date" name="bday"></td>
+                </tr>
+                <tr>
+                    <td><b>Location:</b></td>
+                    <td><input id="HomePhone" name="HomePhone" type="text" maxlength="43" style="width:250px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Cost:</b></td>
+                    <td><input id="CellPhone" name="CellPhone" type="text" maxlength="43" style="width:250px; border:1px solid #999999" /></td>
+                </tr>
+                <tr>
+                    <td><b>Add a Photo:</b></td>
+                    <td><a href='@Url.Action("Index", "Home")'>
+    <input type='button' value='Choose Photo' />
+</a>
+</td>
+                </tr>
+
+            </table>
+            <br />
+        </form>
+
+        <a href='@Url.Action("Index", "Home")'>
+            <input type='button' value='Submit This ClevaDeal' />
+        </a>
+
+
+
+
+    </div>
+    <div class="col-md-2">
+
+
+    </div>
+
+</div>
